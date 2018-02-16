@@ -99,14 +99,19 @@ class NewsTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        guard let DetailedNewsVC = segue.destination as? DetailedNewsViewController,
-            let cell = sender as? UITableViewCell,
-            let cellIndexPath = tableView.indexPath(for: cell)?.row
-        else { return }
+        if segue.identifier == "toProfileScreen" {
+            guard let profileVC = segue.destination as? ProfileViewController else { return }
+            profileVC.email = Auth.auth().currentUser?.email
+            profileVC.id = Auth.auth().currentUser?.uid
+        } else {
+            guard let DetailedNewsVC = segue.destination as? DetailedNewsViewController,
+                let cell = sender as? UITableViewCell,
+                let cellIndexPath = tableView.indexPath(for: cell)?.row
+            else { return }
 
-        DetailedNewsVC.newsTitle = newsArray[cellIndexPath].newsTitle
-        DetailedNewsVC.newsBody = newsArray[cellIndexPath].newsBody
-        DetailedNewsVC.newsImage = newsArray[cellIndexPath].newsImage
+            DetailedNewsVC.newsTitle = newsArray[cellIndexPath].newsTitle
+            DetailedNewsVC.newsBody = newsArray[cellIndexPath].newsBody
+            DetailedNewsVC.newsImage = newsArray[cellIndexPath].newsImage
+        }
     }
 }

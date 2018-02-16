@@ -57,6 +57,8 @@ class DetailedCompetitionViewController: UIViewController {
             mapScreen.competitionTitle = name
             mapScreen.competitionImage = image
             mapScreen.address = address
+        } else if let smpVC = segue.destination as? SMPViewController {
+            smpVC.image = #imageLiteral(resourceName: "SMP")
         }
     }
 

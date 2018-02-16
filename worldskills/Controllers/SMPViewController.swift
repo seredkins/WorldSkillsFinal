@@ -10,10 +10,13 @@ import UIKit
 
 class SMPViewController: UIViewController, UIScrollViewDelegate {
     
+    var image = UIImage()
+    
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.image = #imageLiteral(resourceName: "SMP")
+        imageView.contentMode = .scaleAspectFill
+        imageView.image = image
     }
 }
