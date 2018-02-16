@@ -114,6 +114,14 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     func showOnMap(route: MKRoute) {
+        
+        if mapView.overlays.count > 0 {
+            for overlay in mapView.overlays {
+                mapView.remove(overlay)
+            }
+        }
+        
+        
         mapView.add(route.polyline, level: .aboveRoads)
         let rect = route.polyline.boundingMapRect
         mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)

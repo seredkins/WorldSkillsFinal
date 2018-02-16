@@ -83,10 +83,10 @@ class GalleryTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as? GalleryTableViewCell else { return UITableViewCell() }
         
-        cell.imageView?.image = defaultImage
-        cell.indentationWidth = 100.0
+        cell.photoView.image = defaultImage
+        cell.indentationWidth = 45
         
         return cell
     }

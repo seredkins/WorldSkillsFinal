@@ -37,6 +37,7 @@
 		9BEA40002036F40A008DB388 /* PhotoGalleryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FFF2036F40A008DB388 /* PhotoGalleryCollectionViewController.swift */; };
 		9BEA40022036F4CA008DB388 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA40012036F4CA008DB388 /* PhotoCollectionViewCell.swift */; };
 		9BEA400420371127008DB388 /* GalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA400320371127008DB388 /* GalleryTableViewController.swift */; };
+		9BEA400620371EEC008DB388 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA400520371EEC008DB388 /* GalleryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		9BEA3FFF2036F40A008DB388 /* PhotoGalleryCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoGalleryCollectionViewController.swift; path = worldskills/Controllers/PhotoGalleryCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
 		9BEA40012036F4CA008DB388 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		9BEA400320371127008DB388 /* GalleryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewController.swift; sourceTree = "<group>"; };
+		9BEA400520371EEC008DB388 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
 		D40C6470F78E398FC9E217E9 /* Pods-worldskills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldskills.debug.xcconfig"; path = "Pods/Target Support Files/Pods-worldskills/Pods-worldskills.debug.xcconfig"; sourceTree = "<group>"; };
 		FDF4D985CF7FEA4003B12539 /* Pods-worldskills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldskills.release.xcconfig"; path = "Pods/Target Support Files/Pods-worldskills/Pods-worldskills.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +155,7 @@
 		9BEA3FCB2036BD3B008DB388 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9BEA400520371EEC008DB388 /* GalleryTableViewCell.swift */,
 				9BEA40012036F4CA008DB388 /* PhotoCollectionViewCell.swift */,
 				9BEA3FCC2036BD3B008DB388 /* LaunchScreen.storyboard */,
 				9BEA3FCE2036BD3B008DB388 /* Main.storyboard */,
@@ -347,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BEA400620371EEC008DB388 /* GalleryTableViewCell.swift in Sources */,
 				9BEA3FE62036BD3C008DB388 /* News.swift in Sources */,
 				9BEA3FFC2036DD31008DB388 /* AddressSettingsViewController.swift in Sources */,
 				9BEA40002036F40A008DB388 /* PhotoGalleryCollectionViewController.swift in Sources */,

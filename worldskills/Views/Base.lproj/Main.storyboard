@@ -544,14 +544,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="bVK-V6-S3g">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="180" id="bVK-V6-S3g" customClass="GalleryTableViewCell" customModule="worldskills" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="180"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bVK-V6-S3g" id="guf-wO-LtX">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="179.66666666666666"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TCb-sh-hUe">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="TCb-sh-hUe" firstAttribute="leading" secondItem="guf-wO-LtX" secondAttribute="leading" id="NOU-c1-1Yc"/>
+                                        <constraint firstItem="TCb-sh-hUe" firstAttribute="centerX" secondItem="guf-wO-LtX" secondAttribute="centerX" id="Wqv-dh-Dsa"/>
+                                        <constraint firstItem="TCb-sh-hUe" firstAttribute="centerY" secondItem="guf-wO-LtX" secondAttribute="centerY" id="aOn-35-Ppk"/>
+                                        <constraint firstItem="TCb-sh-hUe" firstAttribute="top" secondItem="guf-wO-LtX" secondAttribute="top" id="vui-5r-66K"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="photoView" destination="TCb-sh-hUe" id="zsj-B5-UHU"/>
                                     <segue destination="2tr-g2-eOT" kind="show" id="oh7-iX-hH9"/>
                                 </connections>
                             </tableViewCell>
@@ -1014,7 +1026,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="di1-AW-EPR"/>
-        <segue reference="WjU-at-fdn"/>
+        <segue reference="oh7-iX-hH9"/>
         <segue reference="YsX-aS-7JY"/>
     </inferredMetricsTieBreakers>
 </document>
