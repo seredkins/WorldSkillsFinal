@@ -7,21 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B79FB442036BC27009ACFE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79FB432036BC27009ACFE2 /* AppDelegate.swift */; };
-		9B79FB462036BC27009ACFE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79FB452036BC27009ACFE2 /* ViewController.swift */; };
-		9B79FB492036BC27009ACFE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B79FB472036BC27009ACFE2 /* Main.storyboard */; };
-		9B79FB4B2036BC27009ACFE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B79FB4A2036BC27009ACFE2 /* Assets.xcassets */; };
-		9B79FB4E2036BC27009ACFE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B79FB4C2036BC27009ACFE2 /* LaunchScreen.storyboard */; };
+		07B19E3A470862B21549DD4C /* Pods_worldskills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A635985C9F4B663F55FFD68 /* Pods_worldskills.framework */; };
+		9BEA3FE32036BD3C008DB388 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FC32036BD3A008DB388 /* Extensions.swift */; };
+		9BEA3FE42036BD3C008DB388 /* Championship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FC62036BD3B008DB388 /* Championship.swift */; };
+		9BEA3FE52036BD3C008DB388 /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FC72036BD3B008DB388 /* Competition.swift */; };
+		9BEA3FE62036BD3C008DB388 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FC82036BD3B008DB388 /* News.swift */; };
+		9BEA3FE72036BD3C008DB388 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FC92036BD3B008DB388 /* Participant.swift */; };
+		9BEA3FE82036BD3C008DB388 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEA3FCC2036BD3B008DB388 /* LaunchScreen.storyboard */; };
+		9BEA3FE92036BD3C008DB388 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEA3FCE2036BD3B008DB388 /* Main.storyboard */; };
+		9BEA3FEA2036BD3C008DB388 /* ParticipantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FD02036BD3B008DB388 /* ParticipantTableViewCell.swift */; };
+		9BEA3FEB2036BD3C008DB388 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FD22036BD3C008DB388 /* AppDelegate.swift */; };
+		9BEA3FEC2036BD3C008DB388 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEA3FD32036BD3C008DB388 /* Assets.xcassets */; };
+		9BEA3FED2036BD3C008DB388 /* ChampionshipsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FD52036BD3C008DB388 /* ChampionshipsTableViewController.swift */; };
+		9BEA3FEE2036BD3C008DB388 /* CompetitionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FD62036BD3C008DB388 /* CompetitionsTableViewController.swift */; };
+		9BEA3FEF2036BD3C008DB388 /* DetailedCompetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FD72036BD3C008DB388 /* DetailedCompetitionViewController.swift */; };
+		9BEA3FF02036BD3C008DB388 /* DetailedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FD82036BD3C008DB388 /* DetailedNewsViewController.swift */; };
+		9BEA3FF12036BD3C008DB388 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FD92036BD3C008DB388 /* MapViewController.swift */; };
+		9BEA3FF22036BD3C008DB388 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FDA2036BD3C008DB388 /* NewsTableViewController.swift */; };
+		9BEA3FF32036BD3C008DB388 /* ParticipantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FDB2036BD3C008DB388 /* ParticipantsTableViewController.swift */; };
+		9BEA3FF42036BD3C008DB388 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FDC2036BD3C008DB388 /* ProfileViewController.swift */; };
+		9BEA3FF52036BD3C008DB388 /* SearchResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FDD2036BD3C008DB388 /* SearchResultsTableViewController.swift */; };
+		9BEA3FF62036BD3C008DB388 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FDE2036BD3C008DB388 /* ShareViewController.swift */; };
+		9BEA3FF72036BD3C008DB388 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FDF2036BD3C008DB388 /* SignInViewController.swift */; };
+		9BEA3FF82036BD3C008DB388 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FE02036BD3C008DB388 /* SignUpViewController.swift */; };
+		9BEA3FF92036BD3C008DB388 /* SMPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FE12036BD3C008DB388 /* SMPViewController.swift */; };
+		9BEA3FFA2036BD3C008DB388 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BEA3FE22036BD3C008DB388 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A635985C9F4B663F55FFD68 /* Pods_worldskills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_worldskills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B79FB402036BC27009ACFE2 /* worldskills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = worldskills.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B79FB432036BC27009ACFE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B79FB452036BC27009ACFE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9B79FB482036BC27009ACFE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9B79FB4A2036BC27009ACFE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9B79FB4D2036BC27009ACFE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B79FB4F2036BC27009ACFE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BEA3FC32036BD3A008DB388 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9BEA3FC42036BD3B008DB388 /* WorldSkills-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WorldSkills-Bridging-Header.h"; sourceTree = "<group>"; };
+		9BEA3FC62036BD3B008DB388 /* Championship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Championship.swift; sourceTree = "<group>"; };
+		9BEA3FC72036BD3B008DB388 /* Competition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Competition.swift; sourceTree = "<group>"; };
+		9BEA3FC82036BD3B008DB388 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		9BEA3FC92036BD3B008DB388 /* Participant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
+		9BEA3FCD2036BD3B008DB388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BEA3FCF2036BD3B008DB388 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BEA3FD02036BD3B008DB388 /* ParticipantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipantTableViewCell.swift; sourceTree = "<group>"; };
+		9BEA3FD22036BD3C008DB388 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BEA3FD32036BD3C008DB388 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BEA3FD52036BD3C008DB388 /* ChampionshipsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionshipsTableViewController.swift; sourceTree = "<group>"; };
+		9BEA3FD62036BD3C008DB388 /* CompetitionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompetitionsTableViewController.swift; sourceTree = "<group>"; };
+		9BEA3FD72036BD3C008DB388 /* DetailedCompetitionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedCompetitionViewController.swift; sourceTree = "<group>"; };
+		9BEA3FD82036BD3C008DB388 /* DetailedNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedNewsViewController.swift; sourceTree = "<group>"; };
+		9BEA3FD92036BD3C008DB388 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9BEA3FDA2036BD3C008DB388 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		9BEA3FDB2036BD3C008DB388 /* ParticipantsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipantsTableViewController.swift; sourceTree = "<group>"; };
+		9BEA3FDC2036BD3C008DB388 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9BEA3FDD2036BD3C008DB388 /* SearchResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewController.swift; sourceTree = "<group>"; };
+		9BEA3FDE2036BD3C008DB388 /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		9BEA3FDF2036BD3C008DB388 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		9BEA3FE02036BD3C008DB388 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9BEA3FE12036BD3C008DB388 /* SMPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMPViewController.swift; sourceTree = "<group>"; };
+		9BEA3FE22036BD3C008DB388 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D40C6470F78E398FC9E217E9 /* Pods-worldskills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldskills.debug.xcconfig"; path = "Pods/Target Support Files/Pods-worldskills/Pods-worldskills.debug.xcconfig"; sourceTree = "<group>"; };
+		FDF4D985CF7FEA4003B12539 /* Pods-worldskills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldskills.release.xcconfig"; path = "Pods/Target Support Files/Pods-worldskills/Pods-worldskills.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07B19E3A470862B21549DD4C /* Pods_worldskills.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +84,8 @@
 			children = (
 				9B79FB422036BC27009ACFE2 /* worldskills */,
 				9B79FB412036BC27009ACFE2 /* Products */,
+				A76D2FC3491895433C807BCF /* Pods */,
+				C043A4A391993A9EE45F4291 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +100,100 @@
 		9B79FB422036BC27009ACFE2 /* worldskills */ = {
 			isa = PBXGroup;
 			children = (
-				9B79FB432036BC27009ACFE2 /* AppDelegate.swift */,
-				9B79FB452036BC27009ACFE2 /* ViewController.swift */,
-				9B79FB472036BC27009ACFE2 /* Main.storyboard */,
-				9B79FB4A2036BC27009ACFE2 /* Assets.xcassets */,
-				9B79FB4C2036BC27009ACFE2 /* LaunchScreen.storyboard */,
+				9BEA3FCA2036BD3B008DB388 /* Base.lproj */,
+				9BEA3FD42036BD3C008DB388 /* Controllers */,
+				9BEA3FC22036BD3A008DB388 /* Extensions */,
+				9BEA3FE22036BD3C008DB388 /* GoogleService-Info.plist */,
+				9BEA3FC52036BD3B008DB388 /* Models */,
+				9BEA3FD12036BD3C008DB388 /* Supportive files */,
+				9BEA3FCB2036BD3B008DB388 /* Views */,
+				9BEA3FC42036BD3B008DB388 /* WorldSkills-Bridging-Header.h */,
 				9B79FB4F2036BC27009ACFE2 /* Info.plist */,
 			);
 			path = worldskills;
+			sourceTree = "<group>";
+		};
+		9BEA3FC22036BD3A008DB388 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9BEA3FC32036BD3A008DB388 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9BEA3FC52036BD3B008DB388 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9BEA3FC62036BD3B008DB388 /* Championship.swift */,
+				9BEA3FC72036BD3B008DB388 /* Competition.swift */,
+				9BEA3FC82036BD3B008DB388 /* News.swift */,
+				9BEA3FC92036BD3B008DB388 /* Participant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9BEA3FCA2036BD3B008DB388 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Base.lproj;
+			path = ../Base.lproj;
+			sourceTree = "<group>";
+		};
+		9BEA3FCB2036BD3B008DB388 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9BEA3FCC2036BD3B008DB388 /* LaunchScreen.storyboard */,
+				9BEA3FCE2036BD3B008DB388 /* Main.storyboard */,
+				9BEA3FD02036BD3B008DB388 /* ParticipantTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9BEA3FD12036BD3C008DB388 /* Supportive files */ = {
+			isa = PBXGroup;
+			children = (
+				9BEA3FD22036BD3C008DB388 /* AppDelegate.swift */,
+				9BEA3FD32036BD3C008DB388 /* Assets.xcassets */,
+			);
+			path = "Supportive files";
+			sourceTree = "<group>";
+		};
+		9BEA3FD42036BD3C008DB388 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9BEA3FDA2036BD3C008DB388 /* NewsTableViewController.swift */,
+				9BEA3FD82036BD3C008DB388 /* DetailedNewsViewController.swift */,
+				9BEA3FD52036BD3C008DB388 /* ChampionshipsTableViewController.swift */,
+				9BEA3FD62036BD3C008DB388 /* CompetitionsTableViewController.swift */,
+				9BEA3FD72036BD3C008DB388 /* DetailedCompetitionViewController.swift */,
+				9BEA3FD92036BD3C008DB388 /* MapViewController.swift */,
+				9BEA3FDB2036BD3C008DB388 /* ParticipantsTableViewController.swift */,
+				9BEA3FDC2036BD3C008DB388 /* ProfileViewController.swift */,
+				9BEA3FDD2036BD3C008DB388 /* SearchResultsTableViewController.swift */,
+				9BEA3FDE2036BD3C008DB388 /* ShareViewController.swift */,
+				9BEA3FDF2036BD3C008DB388 /* SignInViewController.swift */,
+				9BEA3FE02036BD3C008DB388 /* SignUpViewController.swift */,
+				9BEA3FE12036BD3C008DB388 /* SMPViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A76D2FC3491895433C807BCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D40C6470F78E398FC9E217E9 /* Pods-worldskills.debug.xcconfig */,
+				FDF4D985CF7FEA4003B12539 /* Pods-worldskills.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C043A4A391993A9EE45F4291 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A635985C9F4B663F55FFD68 /* Pods_worldskills.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B79FB522036BC27009ACFE2 /* Build configuration list for PBXNativeTarget "worldskills" */;
 			buildPhases = (
+				E86B2BD8593322A97344B651 /* [CP] Check Pods Manifest.lock */,
 				9B79FB3C2036BC27009ACFE2 /* Sources */,
 				9B79FB3D2036BC27009ACFE2 /* Frameworks */,
 				9B79FB3E2036BC27009ACFE2 /* Resources */,
+				3352C98D50443B2BB408BEE9 /* [CP] Embed Pods Frameworks */,
+				D81EA0CFCCCCFB36F82F7560 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,41 +258,120 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B79FB4E2036BC27009ACFE2 /* LaunchScreen.storyboard in Resources */,
-				9B79FB4B2036BC27009ACFE2 /* Assets.xcassets in Resources */,
-				9B79FB492036BC27009ACFE2 /* Main.storyboard in Resources */,
+				9BEA3FE92036BD3C008DB388 /* Main.storyboard in Resources */,
+				9BEA3FE82036BD3C008DB388 /* LaunchScreen.storyboard in Resources */,
+				9BEA3FEC2036BD3C008DB388 /* Assets.xcassets in Resources */,
+				9BEA3FFA2036BD3C008DB388 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3352C98D50443B2BB408BEE9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-worldskills/Pods-worldskills-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-worldskills/Pods-worldskills-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D81EA0CFCCCCFB36F82F7560 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-worldskills/Pods-worldskills-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E86B2BD8593322A97344B651 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-worldskills-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B79FB3C2036BC27009ACFE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B79FB462036BC27009ACFE2 /* ViewController.swift in Sources */,
-				9B79FB442036BC27009ACFE2 /* AppDelegate.swift in Sources */,
+				9BEA3FE62036BD3C008DB388 /* News.swift in Sources */,
+				9BEA3FF02036BD3C008DB388 /* DetailedNewsViewController.swift in Sources */,
+				9BEA3FE42036BD3C008DB388 /* Championship.swift in Sources */,
+				9BEA3FE52036BD3C008DB388 /* Competition.swift in Sources */,
+				9BEA3FEB2036BD3C008DB388 /* AppDelegate.swift in Sources */,
+				9BEA3FEF2036BD3C008DB388 /* DetailedCompetitionViewController.swift in Sources */,
+				9BEA3FF62036BD3C008DB388 /* ShareViewController.swift in Sources */,
+				9BEA3FED2036BD3C008DB388 /* ChampionshipsTableViewController.swift in Sources */,
+				9BEA3FF72036BD3C008DB388 /* SignInViewController.swift in Sources */,
+				9BEA3FF42036BD3C008DB388 /* ProfileViewController.swift in Sources */,
+				9BEA3FEA2036BD3C008DB388 /* ParticipantTableViewCell.swift in Sources */,
+				9BEA3FF22036BD3C008DB388 /* NewsTableViewController.swift in Sources */,
+				9BEA3FF32036BD3C008DB388 /* ParticipantsTableViewController.swift in Sources */,
+				9BEA3FE72036BD3C008DB388 /* Participant.swift in Sources */,
+				9BEA3FF82036BD3C008DB388 /* SignUpViewController.swift in Sources */,
+				9BEA3FE32036BD3C008DB388 /* Extensions.swift in Sources */,
+				9BEA3FF52036BD3C008DB388 /* SearchResultsTableViewController.swift in Sources */,
+				9BEA3FEE2036BD3C008DB388 /* CompetitionsTableViewController.swift in Sources */,
+				9BEA3FF12036BD3C008DB388 /* MapViewController.swift in Sources */,
+				9BEA3FF92036BD3C008DB388 /* SMPViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9B79FB472036BC27009ACFE2 /* Main.storyboard */ = {
+		9BEA3FCC2036BD3B008DB388 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9B79FB482036BC27009ACFE2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9B79FB4C2036BC27009ACFE2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B79FB4D2036BC27009ACFE2 /* Base */,
+				9BEA3FCD2036BD3B008DB388 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9BEA3FCE2036BD3B008DB388 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BEA3FCF2036BD3B008DB388 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -272,6 +486,7 @@
 		};
 		9B79FB532036BC27009ACFE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D40C6470F78E398FC9E217E9 /* Pods-worldskills.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +501,7 @@
 		};
 		9B79FB542036BC27009ACFE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDF4D985CF7FEA4003B12539 /* Pods-worldskills.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

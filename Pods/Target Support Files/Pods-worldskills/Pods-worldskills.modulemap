@@ -1,0 +1,6 @@
+framework module Pods_worldskills {
+  umbrella header "Pods-worldskills-umbrella.h"
+
+  export *
+  module * { export * }
+}
