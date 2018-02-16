@@ -9,7 +9,10 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    @IBOutlet weak var favouriteTableView: UITableView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

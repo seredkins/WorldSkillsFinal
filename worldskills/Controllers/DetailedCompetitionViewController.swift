@@ -55,6 +55,8 @@ class DetailedCompetitionViewController: UIViewController {
         } else if let mapScreen = segue.destination as? MapViewController {
             mapScreen.destinationLocation = location
             mapScreen.competitionTitle = name
+            mapScreen.competitionImage = image
+            mapScreen.address = address
         }
     }
 

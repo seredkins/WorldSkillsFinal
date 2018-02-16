@@ -32,6 +32,8 @@
 		9BEA3FF82036BD3C008DB388 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FE02036BD3C008DB388 /* SignUpViewController.swift */; };
 		9BEA3FF92036BD3C008DB388 /* SMPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FE12036BD3C008DB388 /* SMPViewController.swift */; };
 		9BEA3FFA2036BD3C008DB388 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BEA3FE22036BD3C008DB388 /* GoogleService-Info.plist */; };
+		9BEA3FFC2036DD31008DB388 /* AddressSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FFB2036DD31008DB388 /* AddressSettingsViewController.swift */; };
+		9BEA3FFE2036DDB1008DB388 /* Kolhoz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA3FFD2036DDB1008DB388 /* Kolhoz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		9BEA3FE02036BD3C008DB388 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9BEA3FE12036BD3C008DB388 /* SMPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMPViewController.swift; sourceTree = "<group>"; };
 		9BEA3FE22036BD3C008DB388 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9BEA3FFB2036DD31008DB388 /* AddressSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressSettingsViewController.swift; sourceTree = "<group>"; };
+		9BEA3FFD2036DDB1008DB388 /* Kolhoz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kolhoz.swift; sourceTree = "<group>"; };
 		D40C6470F78E398FC9E217E9 /* Pods-worldskills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldskills.debug.xcconfig"; path = "Pods/Target Support Files/Pods-worldskills/Pods-worldskills.debug.xcconfig"; sourceTree = "<group>"; };
 		FDF4D985CF7FEA4003B12539 /* Pods-worldskills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-worldskills.release.xcconfig"; path = "Pods/Target Support Files/Pods-worldskills/Pods-worldskills.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +157,7 @@
 		9BEA3FD12036BD3C008DB388 /* Supportive files */ = {
 			isa = PBXGroup;
 			children = (
+				9BEA3FFD2036DDB1008DB388 /* Kolhoz.swift */,
 				9BEA3FD22036BD3C008DB388 /* AppDelegate.swift */,
 				9BEA3FD32036BD3C008DB388 /* Assets.xcassets */,
 			);
@@ -162,6 +167,7 @@
 		9BEA3FD42036BD3C008DB388 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9BEA3FFB2036DD31008DB388 /* AddressSettingsViewController.swift */,
 				9BEA3FDA2036BD3C008DB388 /* NewsTableViewController.swift */,
 				9BEA3FD82036BD3C008DB388 /* DetailedNewsViewController.swift */,
 				9BEA3FD52036BD3C008DB388 /* ChampionshipsTableViewController.swift */,
@@ -333,6 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BEA3FE62036BD3C008DB388 /* News.swift in Sources */,
+				9BEA3FFC2036DD31008DB388 /* AddressSettingsViewController.swift in Sources */,
+				9BEA3FFE2036DDB1008DB388 /* Kolhoz.swift in Sources */,
 				9BEA3FF02036BD3C008DB388 /* DetailedNewsViewController.swift in Sources */,
 				9BEA3FE42036BD3C008DB388 /* Championship.swift in Sources */,
 				9BEA3FE52036BD3C008DB388 /* Competition.swift in Sources */,

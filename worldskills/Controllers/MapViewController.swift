@@ -11,14 +11,24 @@ import MapKit
 import CoreLocation
 
 class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
-
+    
+    var address: String?
+        
+    var annotationView = MKAnnotationView()
+    
+    var annotation = MKPointAnnotation()
+    
+//    var pinView = MKPinAnnotationView()
+    
+    
     var userLocation: CLLocation?
     
     var destinationLocation: [Double]?
     
+    
     var competitionTitle: String?
     
-    var annotationButton: UIButton?
+    var competitionImage: UIImage?
     
     @IBOutlet weak var mapView: MKMapView!
     
@@ -35,6 +45,14 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         mapView.showsUserLocation = true
         
         buildRoute(to: destinationLocation!)
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let view = MKAnnotationView()
+        view.annotation = annotation
+        view.image = competitionImage
+        
+        return view
     }
     
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -56,12 +74,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         mapView.showsCompass = true
         mapView.showsBuildings = true
         
-    }
-    
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        annotationView.isEnabled = true
+        
+        
     }
     
     func buildRoute(to coordinate: [Double]) {
@@ -69,7 +84,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         
         let sourceMapItem = MKMapItem(placemark: MKPlacemark(coordinate: userLocation!.coordinate))
         
-        let destinationAnnotation = MKPointAnnotation()
+        let destinationAnnotation = annotation
         destinationAnnotation.title = competitionTitle
         if let location = destinationMapItem.placemark.location {
             destinationAnnotation.coordinate = location.coordinate
@@ -100,18 +115,21 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     func showOnMap(route: MKRoute) {
         mapView.add(route.polyline, level: .aboveRoads)
-        var rect = route.polyline.boundingMapRect
+        let rect = route.polyline.boundingMapRect
         mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
     }
 
-    /*
-    // MARK: - Navigation
+    
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        guard let setVC = segue.destination as? AddressSettingsViewController else {
+            return
+        }
+        
+        setVC.strForKolhozArr = address!
     }
-    */
+ 
+    
+    
 
 }
